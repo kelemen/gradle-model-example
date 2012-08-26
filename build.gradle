@@ -1,0 +1,11 @@
+apply plugin: 'java';
+
+repositories {
+    maven {
+        url 'https://github.com/kelemen/JTrim-repo/raw/master/releases/';
+    }
+}
+
+dependencies {
+    compile group: 'org.jtrim', name: 'jtrim-core', version: '1.2-alpha';
+}
