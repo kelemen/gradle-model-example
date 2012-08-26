@@ -1,6 +1,7 @@
 package org.gradle.tooling.model.generic;
 
 import java.io.File;
+import java.nio.charset.Charset;
 import java.util.Set;
 
 /**
@@ -48,6 +49,14 @@ public interface GenericContentRoot {
      * @return the content directory. This method never returns {@code null}.
      */
     public File getContentDir();
+
+    /**
+     * Returns the encoding of the files in this content root.
+     *
+     * @return the encoding of the files in this content root. This method may
+     *   never return {@code null}.
+     */
+    public Charset getSourceEncoding();
 
     /**
      * The possible types of content directories.
